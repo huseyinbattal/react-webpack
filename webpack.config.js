@@ -32,8 +32,9 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".json"],
     alias: {
-      Helper:path.resolve(__dirname,"app/src/helper/")
-    }
+      Helper: path.resolve(__dirname, "app/src/helper/"),
+      Components: path.resolve(__dirname, "app/src/helper/"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -47,8 +48,8 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
-    onBeforeSetupMiddleware: (devServer)=>{
-  console.log("devserver",devServer)
-    }
+    onBeforeSetupMiddleware: (devServer) => {
+      console.log("devserver", devServer);
+    },
   },
 };
