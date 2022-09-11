@@ -33,7 +33,8 @@ module.exports = {
     extensions: [".js", ".jsx", ".json"],
     alias: {
       Helper: path.resolve(__dirname, "app/src/helper/"),
-      Components: path.resolve(__dirname, "app/src/helper/"),
+      Components: path.resolve(__dirname, "app/src/components/"),
+      Base: path.resolve(__dirname, "app/src/"),
     },
   },
   plugins: [
