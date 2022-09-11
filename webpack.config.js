@@ -31,6 +31,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"],
+    alias: {
+      Helper:path.resolve(__dirname,"app/src/helper/")
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
