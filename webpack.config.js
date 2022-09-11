@@ -2,7 +2,6 @@ const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-
 module.exports = {
   entry: "./app/index.js",
   output: {
@@ -31,10 +30,9 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions:[".js",".jsx",".json"]
+    extensions: [".js", ".jsx", ".json"],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: "Webpack App 1",
       minify: true,
@@ -45,7 +43,6 @@ module.exports = {
     compress: true,
     port: 3000,
     open: true,
-    hot:true,
+    hot: true,
   },
 };
-
