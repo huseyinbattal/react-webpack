@@ -44,5 +44,8 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    onBeforeSetupMiddleware: (devServer)=>{
+  console.log("devserver",devServer)
+    }
   },
 };
