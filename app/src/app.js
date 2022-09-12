@@ -1,16 +1,15 @@
-import React from "react";
-import HelloWorld from "Components/HelloWorld";
-import image from "Base/assets/assets"
+import React from 'react';
+import HelloWorld from 'Components/HelloWorld';
+import image from 'Base/assets/assets.jpg';
 
-
-const App = () => {
-    return (
-        <div>
-            App dosyası
-            <img src={image} />
-            <HelloWorld/>
-        </div>
-    )
+function App() {
+  return (
+    <div>
+      App dosyası
+      <img src={image} />
+      <HelloWorld />
+    </div>
+  );
 }
 
 export default App;

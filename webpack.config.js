@@ -1,4 +1,5 @@
 const path = require("path");
+const EsLintPlugin=require("eslint-webpack-plugin")
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -14,6 +15,10 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: "babel-loader",
+      },
+      {
+        test: /\.(jpe?g|gif|png|svg)$/,
+        use: "url-loader",
       },
       {
         test: /\.(css)$/,
@@ -38,6 +43,7 @@ module.exports = {
     },
   },
   plugins: [
+    new EsLintPlugin(),
     new HtmlWebpackPlugin({
       title: "Webpack App 1",
       minify: true,
