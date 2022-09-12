@@ -1,11 +1,13 @@
 import React from "react";
 import HelloWorld from "Components/HelloWorld";
+import image from "Base/assets/assets"
 
 
 const App = () => {
     return (
         <div>
-           <h1> App dosyası</h1>
+            App dosyası
+            <img src={image} />
             <HelloWorld/>
         </div>
     )
